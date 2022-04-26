@@ -38,7 +38,7 @@ body{
     background-size: contain;
     background-repeat: no-repeat;
     background-position-x: 30%;
-    opacity: 60%;
+    opacity: 70%;
 }
 
 .logo p{
@@ -79,11 +79,14 @@ span~span{
 }
 
 button{
+    border: none;
+    border: 2px solid #596D48;
     margin-top: 25px;
     width: 180px;
     height: 40px;
     border-radius: 5px;
     background-color: #596D48;
+    box-shadow: 2px 4px 2px -3px gray;
     color: white;
 }
 
@@ -114,14 +117,19 @@ fieldset{
     border: 0px;
     display: flex;
     justify-content: left;
-    gap: 50px;
 }
 
 fieldset input{
+    border: none;
+    border: solid 1px;
+    border-color: rgb(85,85,85);
+    border-radius: 6px;
     width: 240px;
 }
 
 fieldset label{
+    display: block;
+    outline: none;
     letter-spacing: 2px;
     font-size: 12px;
     font-family: sans-serif;
@@ -129,6 +137,8 @@ fieldset label{
 }
 
 fieldset div{
+    height: 42px;
+    width: 100%;
     margin-bottom: 15px;
 }
 
@@ -145,7 +155,22 @@ input{
     font-family: sans-serif;
 }
 
-input:hover{
-    border-color: blue;
-    box-shadow: 2px 2px 2px -2px gray;
+input:focus{
+    display: block;
+    outline: none;
+    border: 1.5px solid blue;
+    box-shadow: 2px 2px 4px -2px gray;
+}
+
+input:invalid{
+    display: block;
+    outline: none;
+    border: 1.5px solid red;
+    box-shadow: 2px 2px 4px -2px gray;
+}
+
+span a:link{
+    color: #596D48;
+    text-decoration: none;
+    font-style: normal;
 }
