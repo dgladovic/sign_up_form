@@ -55,7 +55,7 @@ body{
 .right.one,
 .right.two,
 .right.three{
-    background-color: rgb(232, 232, 232);
+    background-color: rgb(249, 250, 251);
     padding-left: 40px;
     height: 33.33%;
 }
@@ -79,15 +79,18 @@ span~span{
 }
 
 button{
-    border: none;
     border: 2px solid #596D48;
     margin-top: 25px;
     width: 180px;
     height: 40px;
     border-radius: 5px;
     background-color: #596D48;
-    box-shadow: 2px 4px 2px -3px gray;
     color: white;
+}
+
+button:hover{
+    background-color: #92a97d;
+    box-shadow: 4px 4px 3px 0px rgb(218, 219, 220);
 }
 
 .right.three p{
@@ -102,7 +105,7 @@ button{
 .right.two{
     position: relative;
     background-color: white;
-    box-shadow: 0px 4px 2px -2px gray;
+    box-shadow: 0px 4px 3px 0px rgb(218, 219, 220);;
 }
 
 .right.two p{
@@ -171,6 +174,12 @@ input:invalid{
 
 span a:link{
     color: #596D48;
+    text-decoration: none;
+    font-style: normal;
+}
+
+span a:visited{
+    color: red;
     text-decoration: none;
     font-style: normal;
 }
