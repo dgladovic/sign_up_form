@@ -9,7 +9,7 @@
 
 body{
     display: flex;
-    height: 600px;
+    height: 800px;
 }
 
 .left{
@@ -38,7 +38,7 @@ body{
     background-size: contain;
     background-repeat: no-repeat;
     background-position-x: 30%;
-    opacity: 80%;
+    opacity: 60%;
 }
 
 .logo p{
@@ -55,12 +55,18 @@ body{
 .right.one,
 .right.two,
 .right.three{
+    background-color: rgb(232, 232, 232);
     padding-left: 40px;
-    height: 33%;
+    height: 33.33%;
+}
+
+.right.one{
+    font-family: sans-serif;
+    justify-content: end;
 }
 
 .right.one p{
-    font-size: large;
+    font-size: 20px;
 }
 
 span{
@@ -69,7 +75,7 @@ span{
 
 span~span{
     margin-top: 1em;
-    color: red;
+    margin-bottom: 1.2em;
 }
 
 button{
@@ -90,3 +96,56 @@ button{
     color: #596D48;
 }
 
+.right.two{
+    position: relative;
+    background-color: white;
+    box-shadow: 0px 4px 2px -2px gray;
+}
+
+.right.two p{
+    margin: 20px 0px 20px 0px;
+    font-size: 22px;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+
+fieldset{
+    padding: 0 0 0 0;
+    border: 0px;
+    display: flex;
+    justify-content: left;
+    gap: 50px;
+}
+
+fieldset input{
+    width: 240px;
+}
+
+fieldset label{
+    letter-spacing: 2px;
+    font-size: 12px;
+    font-family: sans-serif;
+    color: rgb(85, 85, 85);
+}
+
+fieldset div{
+    margin-bottom: 15px;
+}
+
+fieldset div~div{
+}
+
+label{
+    display: block;
+}
+
+input{
+    margin-top: 3px;
+    font-size: 18px;
+    font-family: sans-serif;
+}
+
+input:hover{
+    border-color: blue;
+    box-shadow: 2px 2px 2px -2px gray;
+}
