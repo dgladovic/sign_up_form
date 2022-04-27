@@ -183,3 +183,7 @@ span a:visited{
     text-decoration: none;
     font-style: normal;
 }
+
+.email input:invalid{
+    border: 2px solid red;
+}
